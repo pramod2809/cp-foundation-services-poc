@@ -10,5 +10,5 @@ public class DefaultSummaryRest {
     private String account;
     private String trend;
     private String defaultDate;
-    private Long debtAmount;
+    private String debtAmount;
 }

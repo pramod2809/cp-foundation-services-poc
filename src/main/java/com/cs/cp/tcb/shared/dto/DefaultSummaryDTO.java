@@ -12,7 +12,7 @@ public class DefaultSummaryDTO {
     private String account;
     private String trend;
     private String defaultDate;
-    private Double debtAmount;
+    private String debtAmount;
 
     private TcbDTO tcbEntity;
 }

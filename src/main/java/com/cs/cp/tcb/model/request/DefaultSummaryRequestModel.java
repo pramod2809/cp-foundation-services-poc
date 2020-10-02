@@ -11,5 +11,5 @@ public class DefaultSummaryRequestModel {
 	private String account;
 	private String trend;
 	private String defaultDate;
-	private Double debtAmount;
+	private String debtAmount;
 }

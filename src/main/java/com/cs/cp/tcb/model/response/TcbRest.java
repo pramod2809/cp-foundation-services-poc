@@ -8,5 +8,7 @@ import java.util.List;
 @Getter
 @Setter
 public class TcbRest {
+    //private long id;
+    //private String debtorId;
    private List<DefaultSummaryRest> defaultSummary;
 }
