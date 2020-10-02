@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UsersRepository extends CrudRepository<TcbEntity,Long> {
+public interface TcbRepository extends CrudRepository<TcbEntity,Long> {
     TcbEntity findByDebtorId(String debtorId);
 }

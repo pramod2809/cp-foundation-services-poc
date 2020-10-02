@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class DefaultSummaryDTO {
-    private String id;
+    private long id;
     //private String addressId;
     private String seqNo;
     private String account;

@@ -20,7 +20,7 @@ public class TcbController {
 
     @PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
             MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
-    public TcbRest createUser(@RequestBody TcbDetailsRequestModel requestModel) throws Exception {
+    public TcbRest createTcbUser(@RequestBody TcbDetailsRequestModel requestModel) throws Exception {
         TcbRest returnValue = new TcbRest();
 
         ModelMapper modelMapper = new ModelMapper();
@@ -34,9 +34,8 @@ public class TcbController {
 
 
 
-    @GetMapping(path="/{id}",consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
-        MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
-    public TcbRest createTcbUserData(@PathVariable String id) throws Exception {
+    @GetMapping(path="/{id}", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
+    public TcbRest getTcbUserData(@PathVariable String id) throws Exception {
         TcbRest returnValue = new TcbRest();
         TcbDTO tcbDTO = tcbService.getUserByDebtorId(id);
 

@@ -10,7 +10,7 @@ import java.util.List;
 @Setter
 public class TcbDTO implements Serializable {
     private static final long serialVersionUID= 1L;
-    private String id;
+    private long id;
     private String debtorId;
     private List<DefaultSummaryDTO> defaultSummary;
 }
